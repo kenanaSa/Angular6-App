@@ -1,0 +1,25 @@
+<div class="card-header">
+  <h5>
+    solve quadratic equation
+  </h5>
+</div>
+
+<div class="card-body">
+  <h5>
+    <label>Enter a , b and c :</label>
+  </h5>
+
+  <div class="col-2" style="text-align:center">
+    <div class="input-group">
+      <input [(ngModel)]="a" type="number" name="a" class="form-control" placeholder="a" style="margin:5px;" />
+      <input [(ngModel)]="b" type="number" name="b" class="form-control" placeholder="b" style="margin:5px;" />
+      <input [(ngModel)]="c" type="number" name="c" class="form-control" placeholder="c" style="margin:5px;" />
+      <br />
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="solve()" style="margin:5px;">solve</button>
+  <br>
+  <div>
+    <h5> The Result is : {{message}}</h5>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-header"><h5>simple calculator</h5> </div>
+    <div class="card-body">
+
+      <div class="form-group d-flex">
+        <div class="col-3">
+          <label>First Number : </label>
+          <input [(ngModel)]="num1" type="number" name="number1" width="2" class="form-control" placeholder="Enter Number 1" />
+        </div>
+        <div class="col-3">
+          <label>Second Number : </label>
+          <input [(ngModel)]="num2" type="number" name="number2" aria-atomic="true" class="form-control" placeholder="Enter Number 2"
+          />
+        </div>
+      </div>
+      <div class="btn-toolbar">
+        <button type="button" class="btn btn-success btn-lg" (click)="add()" style="margin:5px;">+</button>
+        <button type="button" class="btn btn-success btn-lg" (click)="sub()" style="margin:5px;">-</button>
+        <button type="button" class="btn btn-success btn-lg" (click)="mul()" style="margin:5px;">×</button>
+      </div>
+      
+      <div class="btn-toolbar">
+        <button type="button" class="btn btn-success btn-lg" (click)="div()" style="margin:5px;">÷</button>
+        <button type="button" class="btn btn-success btn-lg" (click)="rem()" style="margin:5px;">%</button>
+        <button type="button" class="btn btn-success btn-lg" (click)="sqrt1()" style="margin:5px;">sqrt</button>
+      </div>
+      <br />
+
+
+
+      <div>
+        <h5> The Result is : {{res}}</h5>
+      </div>
+
+
+    </div>
+  
+</div>
